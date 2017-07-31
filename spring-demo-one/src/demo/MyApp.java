@@ -1,25 +1,23 @@
 package demo;
 
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-//import org.springframework.context.ConfigurableApplicationContext;
-//import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp {
 	
 	public static void main(String[] args) {
 		
-DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-
-XmlBeanDefinitionReader rdr = new XmlBeanDefinitionReader(factory);
-rdr.loadBeanDefinitions(new
-    ClassPathResource("myConfig.xml"));
-
-Car c =  factory.getBean("car", Car.class);
-c.startCar();
-        
-
+		// load the spring configuration file
+		ConfigurableApplicationContext context = 
+				new ClassPathXmlApplicationContext("myConfig.xml");
+		
+		
+		Car c =  context.getBean("car", Car.class);
+		c.startCar();
+		
+				
+		// close the context
+		context.close();
 	}
 }
 
