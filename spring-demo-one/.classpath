@@ -5,7 +5,8 @@
 	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-beans-4.3.9.RELEASE.jar" sourcepath="/spring-libraries/4.3.9/spring-beans-4.3.9.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-core-4.3.9.RELEASE.jar" sourcepath="/spring-libraries/4.3.9/spring-core-4.3.9.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/spring-libraries/support/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-context-4.3.9.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-expression-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-context-4.3.9.RELEASE.jar" sourcepath="/spring-libraries/4.3.9/spring-context-4.3.9.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-expression-4.3.9.RELEASE.jar" sourcepath="/spring-libraries/4.3.9/spring-expression-4.3.9.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/spring-libraries/4.3.9/spring-aop-4.3.9.RELEASE.jar" sourcepath="/spring-libraries/4.3.9/spring-aop-4.3.9.RELEASE-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
