@@ -24,7 +24,7 @@ public class MyApp {
 		context.close();
 	}
 	
-	@Bean
+	@Bean(name="car",initMethod = "init", destroyMethod = "cleanup")
 	public Car getCar(){
 		return new Car();
 	}
